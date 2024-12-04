@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in progress..</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-styles.css">
+    <link rel="stylesheet" href="start-button.css">
+
+  </head>
+
+  <body>
+    <div class="auth">
+      <!-- <p class="welcome">WhereAmEYE</p> -->
+
+
+    <div class="content">
+      <h1 class="title">where am eye
+        <div class="aurora">
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
+        </div>
+      </h1>
+    </div>
+
+
+      <div class="details">
+        <input type="text" id="username" name="username" placeholder="Username" spellcheck="false" aria-label="Enter username"><br>
+        <button onclick="startGame()">Start guessing</button>
+      </div>
+      <div class="misc">
+        <p class="text">A GeoGuessr Clone but far worse</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    function startGame() {
+      const username = document.getElementById("username").value;
+      if (username.trim() === "") {
+        alert("Please enter your name to start!");
+        return;
+      }
+      localStorage.setItem("username", username); // Save name to localStorage
+      window.location.href = "game.html"; // Redirect to the game page
+    }
+  </script>
+</html> 

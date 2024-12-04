@@ -1,0 +1,50 @@
+
+  .details{
+    margin-top:30px;
+  }
+
+  .details input{
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    color:#555;
+    padding: 10px 25px;
+    border-radius: 17px;
+    height:35px;
+    width: 400px;
+    flex:1;
+    font-size:13px;
+  }
+
+  .misc{
+    position: absolute;
+    margin-top:30px;
+    font-style:italic;
+    font-weight:light;
+    bottom: px;
+  } 
+
+  .misc .text{
+    color: #eae2e2ee;
+  }
+
+  @media (max-width: 600px) {
+    .auth {
+      width: 90%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .welcome {
+      font-size: 30px;
+    }
+  
+    .details input {
+      font-size: 16px;
+    }
+  
+    .details button {
+      width: 120px;
+      height: 35px;
+    }
+  }

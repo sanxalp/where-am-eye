@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoGuessr Clone</title>
+    <link rel="stylesheet" href="game-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+      <div class="street-view" id="street-view">
+          
+      </div>
+      <div class="info-container">
+        <p>Clone</p>
+        <div class="item">
+          <p>Score: 0</p>
+          <p>Round: 1/5</p>
+        </div>
+        <div class="item">
+          <p id="usernameDisplay">username</p>
+        </div>
+        <div class="item">
+          <p>Made by<br>nigacat</p>
+        </div>
+      </div>
+      <div class="results-window">
+        <p id="distanceText">Distance: </p>
+        <p id="pointsText">Points won: </p>
+      </div>
+      <div class="map-container">
+        <div class="world-map" id="map"></div>
+      </div>
+      <div class="guessButton">
+        <button id="guessButton" aria-label="Click here to check results">Make your guess!</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
+
+      </div>
+    </div>
+
+
+    <script type = "module" src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap" async defer></script>
+
+</body>
+</html>

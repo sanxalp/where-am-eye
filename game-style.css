@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  margin: 0;
+}
+
+
+.game-container{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.info-container {
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 25;
+  border: solid;
+}
+
+.info-container p {
+  font-size: 15px;
+  color: #333;
+}
+
+.item{
+  margin-top: 15px;
+}
+
+.map-container{
+  position: relative;
+  width:100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.world-map{
+  width:380px;
+  height:190px;
+  bottom: 80px;
+  right:20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  border: solid;
+  border-color: black;
+  border-radius:5%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: crosshair;
+  transform-origin: right bottom;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.world-map:hover{
+  transform: scale(1.33);
+}
+
+#street-view {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Base layer */
+  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+#guessButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  
+}
+
+#guessButton:hover {
+  background-color: #2e1bbe;
+  transition: 0.3s;
+}
+
+.expanded-map{
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  transition: transform 0.3s ease;
+  transform-origin: right bottom;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 19; /* Below the expanded map */
+  display: none; /* Hidden by default */
+}
+.overlay.show {
+  display: block;
+}
+
+.results-window {
+  position: fixed;
+  top: 250px;
+  left: 70px;
+  transform: translateX(-50%);
+  width: auto; /* Adjust width to fit content */
+  max-width: 90%; /* Ensure it doesn't overflow on smaller screens */
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 10px;
+  z-index: 25; /* Ensure it appears above other elements */
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .info-container {
+    top: 10px;
+    left: 10px;
+    width: 33%;
+    height:250px;
+  }
+
+  .world-map {
+    width: 250px;
+    height: 180px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
