@@ -1,3 +1,6 @@
+//this file is solely to test some functions
+
+
 function updateUsername(){
   const username = localStorage.getItem("username");
 
