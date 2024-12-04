@@ -132,8 +132,8 @@ body {
 
 .results-window {
   position: fixed;
-  top: 250px;
-  left: 70px;
+  top: 280px;
+  left: 84px;
   transform: translateX(-50%);
   width: auto; /* Adjust width to fit content */
   max-width: 90%; /* Ensure it doesn't overflow on smaller screens */
