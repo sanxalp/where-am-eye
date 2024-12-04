@@ -12,4 +12,4 @@ also using a small set of locations for now - locations.js
 if doesnt run, idk contact me maybe
 
 
-+ that's all
++ will work on more stuff later (better mobile responsiveness and ui)
