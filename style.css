@@ -24,8 +24,14 @@
     bottom: px;
   } 
 
-  .misc .text{
+  .text{
     color: #eae2e2ee;
+  }
+
+  .help{
+    color:beige;
+    margin-top: 100px;
+    font-size:10px;
   }
 
   @media (max-width: 600px) {
