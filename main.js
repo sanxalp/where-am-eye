@@ -111,9 +111,6 @@ function initMap() {
       document.getElementById("pointsText").textContent = `Points won: ${points}`;
       document.querySelector(".info-container .item p:first-child").textContent = `Score: ${totalScore}`;
 
-      console.log(distance);
-      console.log(points);
-
       marker.setVisible(false);
 
       currentRound++;
