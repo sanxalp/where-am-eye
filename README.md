@@ -1,4 +1,4 @@
-# how-to-play
+# demo
 ![wae-trimmed-ezgif com-optimize](https://github.com/user-attachments/assets/0b957fa0-5ae9-4f4b-aef2-839b452f5e7f)
 
 
