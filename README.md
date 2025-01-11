@@ -1,5 +1,5 @@
 # how-to-play
-![demo video](https://drive.google.com/file/d/1hq0dwRd4fL2IHo-0qboBP6GzxlaicPLE/view?usp=drive_link)
+![wae-trimmed-ezgif com-optimize](https://github.com/user-attachments/assets/0b957fa0-5ae9-4f4b-aef2-839b452f5e7f)
 
 
 
